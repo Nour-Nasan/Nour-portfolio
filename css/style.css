@@ -1,26 +1,27 @@
 /* =========================
    NOUR NASAN - PORTFOLIO
+   DARK BURGUNDY / WINE THEME
    ========================= */
 
 :root {
-    --bg: #070b14;
-    --bg-secondary: #0b1120;
-    --card: #101827;
-    --card-hover: #151f32;
+    --bg: #160f13;
+    --bg-secondary: #1b1217;
+    --card: #21171d;
+    --card-hover: #291d24;
 
-    --text: #f8fafc;
-    --text-secondary: #9ca9bb;
+    --text: #f8f3f5;
+    --text-secondary: #b8aab0;
 
-    --accent: #7c6cff;
-    --accent-light: #a89cff;
-    --accent-blue: #4ca7ff;
+    --accent: #b85f78;
+    --accent-light: #d58ba0;
+    --accent-blue: #c77991;
 
     --border: rgba(255, 255, 255, 0.08);
 
     --gradient: linear-gradient(
         135deg,
-        #7c6cff,
-        #4ca7ff
+        #9d4f66,
+        #c77991
     );
 }
 
@@ -43,12 +44,12 @@ body {
     background:
         radial-gradient(
             circle at 80% 10%,
-            rgba(124, 108, 255, 0.12),
+            rgba(184, 95, 120, 0.13),
             transparent 30%
         ),
         radial-gradient(
             circle at 10% 40%,
-            rgba(76, 167, 255, 0.07),
+            rgba(118, 53, 73, 0.09),
             transparent 25%
         ),
         var(--bg);
@@ -83,7 +84,7 @@ section {
 .navbar {
     padding: 18px 0;
 
-    background: rgba(7, 11, 20, 0.82);
+    background: rgba(22, 15, 19, 0.88);
 
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
@@ -175,9 +176,9 @@ section {
 
     background: linear-gradient(
         120deg,
-        #ffffff 20%,
-        #b7c5ff 60%,
-        #7c6cff
+        #fffafb 20%,
+        #e4bdc8 60%,
+        #b85f78
     );
 
     -webkit-background-clip: text;
@@ -189,7 +190,7 @@ section {
 .hero-content h2 {
     font-size: clamp(1.25rem, 3vw, 1.8rem);
 
-    color: #cbd5e1;
+    color: #dccfd4;
 
     font-weight: 500;
 
@@ -244,7 +245,7 @@ section {
     transform: translateY(-3px);
 
     box-shadow:
-        0 10px 30px rgba(124, 108, 255, 0.25);
+        0 10px 30px rgba(184, 95, 120, 0.25);
 }
 
 .secondary-btn {
@@ -258,9 +259,9 @@ section {
 .secondary-btn:hover {
     color: white;
 
-    border-color: rgba(124, 108, 255, 0.6);
+    border-color: rgba(184, 95, 120, 0.6);
 
-    background: rgba(124, 108, 255, 0.08);
+    background: rgba(184, 95, 120, 0.08);
 
     transform: translateY(-3px);
 }
@@ -360,7 +361,7 @@ section {
 
     border-radius: 12px;
 
-    color: #dce4f0;
+    color: #eadfe3;
 
     font-weight: 600;
 
@@ -370,9 +371,9 @@ section {
 .skill-card:hover {
     transform: translateY(-5px);
 
-    background: rgba(124, 108, 255, 0.08);
+    background: rgba(184, 95, 120, 0.08);
 
-    border-color: rgba(124, 108, 255, 0.35);
+    border-color: rgba(184, 95, 120, 0.35);
 }
 
 
@@ -404,10 +405,10 @@ section {
 .project-card:hover {
     transform: translateY(-5px);
 
-    border-color: rgba(124, 108, 255, 0.28);
+    border-color: rgba(184, 95, 120, 0.28);
 
     box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.22);
+        0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
 .project-image {
@@ -416,8 +417,8 @@ section {
     background:
         linear-gradient(
             135deg,
-            rgba(124, 108, 255, 0.16),
-            rgba(76, 167, 255, 0.06)
+            rgba(184, 95, 120, 0.15),
+            rgba(108, 52, 69, 0.07)
         );
 
     display: flex;
@@ -428,7 +429,7 @@ section {
 }
 
 .image-placeholder {
-    color: #65728a;
+    color: #806b73;
 
     font-size: 0.9rem;
 
@@ -486,11 +487,11 @@ section {
 
     border-radius: 6px;
 
-    background: rgba(124, 108, 255, 0.09);
+    background: rgba(184, 95, 120, 0.09);
 
-    border: 1px solid rgba(124, 108, 255, 0.15);
+    border: 1px solid rgba(184, 95, 120, 0.15);
 
-    color: #c6bfff;
+    color: #e2a8b8;
 
     font-size: 0.78rem;
 }
@@ -530,6 +531,8 @@ section {
 .project-cover {
     min-height: 350px;
 }
+
+
 /* =========================
    CONTACT
    ========================= */
@@ -590,7 +593,7 @@ section {
 
     color: var(--accent-light);
 
-    border-color: rgba(124, 108, 255, 0.4);
+    border-color: rgba(184, 95, 120, 0.4);
 }
 
 
@@ -609,7 +612,7 @@ footer {
 footer p {
     margin: 0;
 
-    color: #667085;
+    color: #7f6d74;
 
     font-size: 0.85rem;
 }
@@ -646,9 +649,10 @@ footer p {
 
 
 @media (max-width: 576px) {
-   .project-cover {
-    min-height: 220px;
-   }
+
+    .project-cover {
+        min-height: 220px;
+    }
 
     .hero-section {
         min-height: 95vh;
